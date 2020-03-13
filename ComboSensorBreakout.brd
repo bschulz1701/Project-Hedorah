@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.2.1">
+<eagle version="9.5.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -59,7 +59,7 @@
 <layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
 <layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="no" active="yes"/>
 <layer number="53" name="tGND_GNDA" color="7" fill="1" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="7" fill="1" visible="no" active="no"/>
 <layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
@@ -169,16 +169,16 @@
 <wire x1="5.588" y1="7.366" x2="4.191" y2="5.969" width="0.254" layer="52" curve="-95.452622"/>
 <text x="4.699" y="8.001" size="1.27" layer="52" font="vector" ratio="15" rot="MR0" align="center">±</text>
 <wire x1="5.588" y1="8.636" x2="5.588" y2="7.366" width="0.254" layer="52"/>
-<text x="1.397" y="9.271" size="0.6096" layer="52" font="vector" ratio="15" rot="MR0" align="center">Vin+</text>
-<text x="1.397" y="6.731" size="0.6096" layer="52" font="vector" ratio="15" rot="MR0" align="center">Vin-</text>
+<text x="1.397" y="9.271" size="0.6096" layer="52" font="vector" ratio="15" rot="MR0" align="center">Vin-</text>
+<text x="1.397" y="6.731" size="0.6096" layer="52" font="vector" ratio="15" rot="MR0" align="center">Vin+</text>
 <text x="1.397" y="4.191" size="0.6096" layer="52" font="vector" ratio="15" rot="MR0" align="center">SDA</text>
 <text x="1.397" y="1.651" size="0.6096" layer="52" font="vector" ratio="15" rot="MR0" align="center">SCL</text>
 <text x="7.747" y="5.461" size="0.8128" layer="52" font="vector" ratio="15" rot="MR270" align="center">To Logger
 1.8v ~ 5v</text>
 <text x="4.318" y="14.351" size="0.8128" layer="52" font="vector" ratio="15" rot="MR180" align="center-left">Project Hedorah v0.0
 Bobby Schulz</text>
-<text x="1.397" y="9.271" size="0.6096" layer="51" font="vector" ratio="15" align="center">Vin+</text>
-<text x="1.397" y="6.731" size="0.6096" layer="51" font="vector" ratio="15" align="center">Vin-</text>
+<text x="1.397" y="9.271" size="0.6096" layer="51" font="vector" ratio="15" align="center">Vin-</text>
+<text x="1.397" y="6.731" size="0.6096" layer="51" font="vector" ratio="15" align="center">Vin+</text>
 <text x="1.397" y="4.191" size="0.6096" layer="51" font="vector" ratio="15" align="center">SDA</text>
 <text x="1.397" y="1.651" size="0.6096" layer="51" font="vector" ratio="15" align="center">SCL</text>
 <dimension x1="0" y1="14.672" x2="17.76" y2="14.672" x3="8.88" y3="18.923" textsize="0.6096" textratio="15" layer="48" dtype="horizontal"/>
