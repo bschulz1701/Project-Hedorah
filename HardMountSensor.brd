@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.6.2">
+<eagle version="9.5.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -23,20 +23,20 @@
 <layer number="13" name="Route13" color="21" fill="1" visible="no" active="no"/>
 <layer number="14" name="Route14" color="22" fill="1" visible="no" active="no"/>
 <layer number="15" name="Route15" color="23" fill="1" visible="no" active="no"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="24" fill="1" visible="yes" active="yes"/>
-<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="no" active="yes"/>
 <layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
-<layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
 <layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
@@ -46,7 +46,7 @@
 <layer number="36" name="bGlue" color="7" fill="5" visible="no" active="yes"/>
 <layer number="37" name="tTest" color="7" fill="1" visible="no" active="yes"/>
 <layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
-<layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
+<layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="yes"/>
 <layer number="40" name="bKeepout" color="1" fill="11" visible="yes" active="yes"/>
 <layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes"/>
 <layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
@@ -161,17 +161,12 @@
 </layers>
 <board>
 <plain>
-<wire x1="4.191" y1="10.033" x2="5.588" y2="8.636" width="0.254" layer="52" curve="-95.452622"/>
-<wire x1="5.588" y1="7.366" x2="4.191" y2="5.969" width="0.254" layer="52" curve="-95.452622"/>
-<text x="4.699" y="8.001" size="1.27" layer="52" font="vector" ratio="15" rot="MR0" align="center">±</text>
-<wire x1="5.588" y1="8.636" x2="5.588" y2="7.366" width="0.254" layer="52"/>
-<text x="1.397" y="9.271" size="0.6096" layer="52" font="vector" ratio="15" rot="MR0" align="center">Vin-</text>
-<text x="1.397" y="6.731" size="0.6096" layer="52" font="vector" ratio="15" rot="MR0" align="center">Vin+</text>
-<text x="1.397" y="4.191" size="0.6096" layer="52" font="vector" ratio="15" rot="MR0" align="center">SDA</text>
-<text x="1.397" y="1.651" size="0.6096" layer="52" font="vector" ratio="15" rot="MR0" align="center">SCL</text>
-<text x="7.747" y="5.461" size="0.8128" layer="52" font="vector" ratio="15" rot="MR270" align="center">To Logger
-1.8v ~ 5v</text>
-<text x="4.318" y="14.351" size="0.8128" layer="52" font="vector" ratio="15" rot="MR180" align="center-left">Project Hedorah v0.0
+<text x="1.651" y="2.286" size="0.6096" layer="51" font="vector" ratio="15" align="center">Vin-</text>
+<text x="1.651" y="7.747" size="0.6096" layer="51" font="vector" ratio="15" align="center">Vin+</text>
+<text x="1.651" y="7.747" size="0.6096" layer="52" font="vector" ratio="15" rot="MR0" align="center">SDA</text>
+<text x="1.651" y="2.286" size="0.6096" layer="52" font="vector" ratio="15" rot="MR0" align="center">SCL</text>
+<text x="4.318" y="8.128" size="0.8128" layer="52" font="vector" ratio="15" rot="MR180" align="center-left">Project Hedorah v0.0
+Hard Mount
 Bobby Schulz</text>
 <text x="-4.953" y="34.671" size="0.6096" layer="51" font="vector" ratio="15" align="center">Vin-</text>
 <text x="-4.953" y="32.131" size="0.6096" layer="51" font="vector" ratio="15" align="center">Vin+</text>
@@ -621,7 +616,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="DIGIKEY" value="490-6051-1-ND" x="-14.224" y="-13.462" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MF" value="Murata" x="-14.224" y="-13.462" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MPN" value="GCM188R71E104KA57D" x="-14.224" y="-13.462" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="NAME" x="13.716" y="3.683" size="0.6096" layer="25" font="vector" ratio="15" align="center"/>
+<attribute name="NAME" x="15.113" y="1.778" size="0.6096" layer="25" font="vector" ratio="15" rot="R90" align="center"/>
 <attribute name="VALUE" x="12.319" y="1.778" size="0.6096" layer="27" font="vector" ratio="15" rot="R270" align="center"/>
 </element>
 <element name="C6" library="bschulz_passives" package="C0603" value="" x="7.62" y="1.778" smashed="yes" rot="R90">
@@ -635,7 +630,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="DIGIKEY" value="DMG3404L-7DICT-ND" x="22.606" y="24.257" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MF" value="Diodes Incorporated" x="22.606" y="24.257" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MPN" value="DMG3404L-7" x="22.606" y="24.257" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="4.826" y="5.715" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center"/>
+<attribute name="NAME" x="4.826" y="2.286" size="0.6096" layer="25" font="vector" ratio="15" rot="R180" align="bottom-center"/>
 <attribute name="VALUE" x="4.826" y="5.588" size="0.6096" layer="27" font="vector" ratio="20" rot="R180" align="top-center"/>
 </element>
 <element name="U1" library="bschulz" package="DFN_6_2.5X2.5" value="SPG30" x="25.019" y="5.04" smashed="yes" rot="R180">
@@ -649,7 +644,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="DISP" value="SHTC3" x="40.132" y="31.71" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MF" value="Sensirion" x="40.132" y="31.71" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MPN" value="SHTC3" x="40.132" y="31.71" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="16.002" y="6.945" size="0.6096" layer="25" font="vector" ratio="15" rot="R180" align="center"/>
+<attribute name="NAME" x="17.566" y="5.04" size="0.6096" layer="25" font="vector" ratio="15" rot="R270" align="center"/>
 </element>
 <element name="U3" library="bschulz" package="SOT23-5" value="TPS7A0518DBV" x="7.112" y="7.366" smashed="yes" rot="R180">
 <attribute name="DIGIKEY" value="" x="-9.398" y="11.176" size="1.778" layer="27" rot="R180" display="off"/>
@@ -663,7 +658,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="DIGIKEY" value="296-21931-1-ND" x="28.448" y="17.018" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MF" value="TI" x="28.448" y="17.018" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MPN" value="TXS0102DCUR" x="28.448" y="17.018" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="10.636" y="3.576" size="0.6096" layer="25" font="vector" ratio="15" rot="R180"/>
+<attribute name="NAME" x="11.704" y="2.953" size="0.6096" layer="25" font="vector" ratio="15" rot="R90"/>
 <attribute name="VALUE" x="12.668" y="3.643" size="0.6096" layer="27" font="vector" ratio="15" rot="R180"/>
 </element>
 <element name="J2" library="bschulz" package="SOLDERCUP_CONN_QUAD" value="SOLDERCUP_CONN_QUAD" x="0.381" y="5.04" smashed="yes" rot="R270">
@@ -744,14 +739,16 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <wire x1="24.346" y1="5.84" x2="25.146" y2="5.04" width="0.3048" layer="1"/>
 <wire x1="22.225" y1="5.89" x2="22.275" y2="5.84" width="0.3048" layer="1"/>
 <wire x1="22.275" y1="5.84" x2="23.869" y2="5.84" width="0.3048" layer="1"/>
-<wire x1="22.225" y1="5.89" x2="21.67076875" y2="5.89" width="0.254" layer="1"/>
-<wire x1="21.67076875" y1="5.89" x2="21.288884375" y2="5.508115625" width="0.254" layer="1"/>
+<wire x1="22.225" y1="5.89" x2="21.54376875" y2="5.89" width="0.254" layer="1"/>
+<wire x1="21.54376875" y1="5.89" x2="21.288884375" y2="5.635115625" width="0.254" layer="1"/>
+<wire x1="21.288884375" y1="5.635115625" x2="21.288884375" y2="5.508115625" width="0.254" layer="1"/>
 <via x="21.288884375" y="5.508115625" extent="1-16" drill="0.254"/>
 <via x="12.573" y="5.969" extent="1-16" drill="0.254"/>
 <wire x1="21.288884375" y1="5.508115625" x2="20.982278125" y2="5.508115625" width="0.254" layer="16"/>
 <wire x1="20.982278125" y1="5.508115625" x2="20.8297625" y2="5.3556" width="0.254" layer="16"/>
-<wire x1="20.8297625" y1="5.3556" x2="13.1864" y2="5.3556" width="0.254" layer="16"/>
-<wire x1="13.1864" y1="5.3556" x2="12.573" y2="5.969" width="0.254" layer="16"/>
+<wire x1="20.8297625" y1="5.3556" x2="13.9484" y2="5.3556" width="0.254" layer="16"/>
+<wire x1="13.9484" y1="5.3556" x2="13.335" y2="5.969" width="0.254" layer="16"/>
+<wire x1="13.335" y1="5.969" x2="12.573" y2="5.969" width="0.254" layer="16"/>
 <wire x1="12.573" y1="5.969" x2="12.573" y2="7.112" width="0.254" layer="1"/>
 <wire x1="10.961" y1="8.724" x2="9.906" y2="8.724" width="0.254" layer="1"/>
 <wire x1="12.573" y1="7.112" x2="10.961" y2="8.724" width="0.254" layer="1"/>
@@ -813,17 +810,16 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <wire x1="21.78336875" y1="4.0774" x2="23.84294375" y2="4.0774" width="0.254" layer="16"/>
 <wire x1="26.035" y1="3.429" x2="26.169" y2="3.563" width="0.254" layer="1"/>
 <wire x1="26.169" y1="3.563" x2="26.169" y2="4.24" width="0.254" layer="1"/>
-<wire x1="9.906" y1="7.024" x2="8.898" y2="6.016" width="0.3048" layer="1"/>
-<wire x1="8.898" y1="6.016" x2="8.062" y2="6.016" width="0.3048" layer="1"/>
-<wire x1="8.062" y1="6.016" x2="8.062" y2="4.892" width="0.3048" layer="1"/>
-<wire x1="8.062" y1="4.892" x2="8.636" y2="4.318" width="0.3048" layer="1"/>
-<wire x1="8.636" y1="4.318" x2="9.779" y2="4.318" width="0.3048" layer="1"/>
-<wire x1="10.668" y1="3.429" x2="10.668" y2="3.175" width="0.3048" layer="1"/>
 <wire x1="10.668" y1="3.175" x2="10.668" y2="2.028" width="0.3048" layer="1"/>
-<wire x1="9.779" y1="4.318" x2="10.668" y2="3.429" width="0.3048" layer="1"/>
 <wire x1="11.938" y1="4.826" x2="10.668" y2="3.556" width="0.254" layer="16"/>
 <wire x1="10.668" y1="3.556" x2="10.668" y2="3.175" width="0.254" layer="16"/>
 <via x="10.668" y="3.175" extent="1-16" drill="0.254"/>
+<wire x1="9.906" y1="5.207" x2="9.906" y2="6.096" width="0.3048" layer="1"/>
+<wire x1="9.906" y1="6.096" x2="9.906" y2="7.024" width="0.3048" layer="1"/>
+<wire x1="10.668" y1="3.175" x2="10.668" y2="4.445" width="0.3048" layer="1"/>
+<wire x1="10.668" y1="4.445" x2="9.906" y2="5.207" width="0.3048" layer="1"/>
+<wire x1="8.062" y1="6.016" x2="8.142" y2="6.096" width="0.3048" layer="1"/>
+<wire x1="8.142" y1="6.096" x2="9.906" y2="6.096" width="0.3048" layer="1"/>
 </signal>
 <signal name="VIN+">
 <contactref element="U3" pad="1"/>
