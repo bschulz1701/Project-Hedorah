@@ -47,7 +47,12 @@ Scripts and results from the testing process and development process. Contains m
 * I<sup>2</sup>C data interface
 * M12 circular connector 
 
-![Pinout](Documents/Images/Pinout.png)
+<!-- ![Pinout](Documents/Images/Pinout.png) -->
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="Documents/Images/Pinout_LIGHT.png">
+  <img alt="Hedorah Connector Pinout" src="Documents/Images/Pinout.png">
+</picture>
 
 
 ## Specifications
