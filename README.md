@@ -21,9 +21,9 @@ Mechanical design files and assembly documents
 
 Contains the various Gerber and pick and place files required to have the Printed Circuit Boards (PCBs) manufactured or populated 
 
-<!-- #### [Software](Software/)
+#### [Software](Software/)
 
-The software associated with the piece of hardware, this is usually diagnostic software used for verifying or investigating the hardware -->
+The software associated with the piece of hardware, this is usually diagnostic software used for verifying or investigating the hardware
 
 <!-- #### [Testing](Testing/)
 
@@ -66,26 +66,39 @@ Scripts and results from the testing process and development process. Contains m
 #### Sensor [^1]
 **CO2**
 * Range: 0 ~ 40,000 ppm CO2 
-* Accuracy: &plusm; 30 ppm + (3% Measured Value)
-* Repeatability: &plusm; 10 ppm
+* Accuracy: &plusmn; 30 ppm + (3% Measured Value)
+* Repeatability: &plusmn; 10 ppm
 
 **Humidity**
 * Range: 0 ~ 100%
-* Accuracy: &plusm; 3%
+* Accuracy: &plusmn; 3%
 * Repeatability: 0.1%
 
 **Temperature**
 * Range: -40 ~ 70°C 
-* Accuracy: &plusm; (0.4°C + 0.023 x (Temperature [°C] - 25°C))
-* Repeatability: &plusm; 0.1°C
+* Accuracy: &plusmn; (0.4°C + 0.023 x (Temperature [°C] - 25°C))
+* Repeatability: &plusmn; 0.1°C
 
+## Version History
+
+**Mrk 0 - Prototype:** Breakout/development board for SGP30 eCO2 sensor
+
+**Mrk 1 - eCO2:** Same components as Mrk 0, but arranged into a streamlined formfactor, compatable with [Haar](https://github.com/NorthernWidget-Skunkworks/Project-Haar) enclosure 
+
+**Mrk 2 - NDIR:** Switched sensor to SCD30 NDIR sensor, moved away from Haar enclosure to custom enclosure
+
+  * `v0.0` - Initial NDIR version, breakout only
+
+  * `v1.0` - Added reverse polarity protection and I2C pullups
 
 ## Jumper Settings 
 
-**Configuration Jumpers**
+**Configuration Jumpers** [^2]
 | Jumper | Purpose | Open | Closed | Default | 
 | ------ | ------- | ---------- | ---------- | ----- | 
 | `JP1` | Bypass reverse polarity protection | protection enabled | protection disabled | Open |  
+
+[^2]: Mrk 2 only
 
 ## Known Issues/Errata
 
