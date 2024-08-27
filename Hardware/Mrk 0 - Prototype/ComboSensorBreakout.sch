@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.2.1">
+<eagle version="9.6.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -64,6 +64,7 @@
 <layer number="54" name="bGND_GNDA" color="7" fill="1" visible="no" active="no"/>
 <layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
 <layer number="57" name="tCAD" color="7" fill="1" visible="no" active="no"/>
+<layer number="58" name="bCAD" color="7" fill="1" visible="no" active="no"/>
 <layer number="59" name="tCarbon" color="7" fill="1" visible="no" active="no"/>
 <layer number="60" name="bCarbon" color="7" fill="1" visible="no" active="no"/>
 <layer number="88" name="SimResults" color="9" fill="1" visible="yes" active="yes"/>
@@ -95,7 +96,10 @@
 <layer number="114" name="Badge_Outline" color="7" fill="1" visible="no" active="yes"/>
 <layer number="115" name="ReferenceISLANDS" color="7" fill="1" visible="no" active="yes"/>
 <layer number="116" name="Patch_BOT" color="7" fill="1" visible="no" active="yes"/>
+<layer number="117" name="PM_Ref" color="7" fill="1" visible="no" active="no"/>
 <layer number="118" name="Rect_Pads" color="7" fill="1" visible="no" active="yes"/>
+<layer number="119" name="PF_Ref" color="7" fill="1" visible="no" active="no"/>
+<layer number="120" name="WFL_Ref" color="7" fill="1" visible="no" active="no"/>
 <layer number="121" name="_tsilk" color="7" fill="1" visible="no" active="yes"/>
 <layer number="122" name="_bsilk" color="7" fill="1" visible="no" active="yes"/>
 <layer number="123" name="tTestmark" color="7" fill="1" visible="no" active="yes"/>
@@ -105,15 +109,40 @@
 <layer number="127" name="_tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="128" name="_bValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="129" name="Mask" color="7" fill="1" visible="no" active="yes"/>
+<layer number="130" name="SMDSTROOK" color="7" fill="1" visible="no" active="no"/>
 <layer number="131" name="tAdjust" color="7" fill="1" visible="no" active="yes"/>
 <layer number="132" name="bAdjust" color="7" fill="1" visible="no" active="yes"/>
+<layer number="133" name="bottom_silk" color="7" fill="1" visible="no" active="no"/>
+<layer number="134" name="mbFinish" color="7" fill="1" visible="no" active="no"/>
+<layer number="135" name="mtGlue" color="7" fill="1" visible="no" active="no"/>
+<layer number="136" name="mbGlue" color="7" fill="1" visible="no" active="no"/>
+<layer number="137" name="mtTest" color="7" fill="1" visible="no" active="no"/>
+<layer number="138" name="mbTest" color="7" fill="1" visible="no" active="no"/>
+<layer number="139" name="mtKeepout" color="7" fill="1" visible="no" active="no"/>
+<layer number="140" name="mbKeepout" color="7" fill="1" visible="no" active="no"/>
+<layer number="141" name="mtRestrict" color="7" fill="1" visible="no" active="no"/>
+<layer number="142" name="mbRestrict" color="7" fill="1" visible="no" active="no"/>
+<layer number="143" name="mvRestrict" color="7" fill="1" visible="no" active="no"/>
 <layer number="144" name="Drill_legend" color="7" fill="1" visible="no" active="yes"/>
+<layer number="145" name="mHoles" color="7" fill="1" visible="no" active="no"/>
+<layer number="146" name="mMilling" color="7" fill="1" visible="no" active="no"/>
+<layer number="147" name="mMeasures" color="7" fill="1" visible="no" active="no"/>
+<layer number="148" name="mDocument" color="7" fill="1" visible="no" active="no"/>
+<layer number="149" name="mReference" color="7" fill="1" visible="no" active="no"/>
 <layer number="150" name="Notes" color="7" fill="1" visible="no" active="yes"/>
 <layer number="151" name="HeatSink" color="7" fill="1" visible="no" active="yes"/>
 <layer number="152" name="_bDocu" color="7" fill="1" visible="no" active="yes"/>
 <layer number="153" name="FabDoc1" color="7" fill="1" visible="no" active="yes"/>
 <layer number="154" name="FabDoc2" color="7" fill="1" visible="no" active="yes"/>
 <layer number="155" name="FabDoc3" color="7" fill="1" visible="no" active="yes"/>
+<layer number="166" name="AntennaArea" color="7" fill="1" visible="no" active="no"/>
+<layer number="168" name="4mmHeightArea" color="7" fill="1" visible="no" active="no"/>
+<layer number="191" name="mNets" color="7" fill="1" visible="no" active="no"/>
+<layer number="192" name="mBusses" color="7" fill="1" visible="no" active="no"/>
+<layer number="193" name="mPins" color="7" fill="1" visible="no" active="no"/>
+<layer number="194" name="mSymbols" color="7" fill="1" visible="no" active="no"/>
+<layer number="195" name="mNames" color="7" fill="1" visible="no" active="no"/>
+<layer number="196" name="mValues" color="7" fill="1" visible="no" active="no"/>
 <layer number="199" name="Contour" color="7" fill="1" visible="no" active="yes"/>
 <layer number="200" name="200bmp" color="7" fill="1" visible="no" active="yes"/>
 <layer number="201" name="201bmp" color="7" fill="1" visible="no" active="yes"/>
@@ -197,57 +226,6 @@
 <circle x="-1.524" y="1.524" radius="0.127" width="0.127" layer="21"/>
 <text x="0" y="-1.778" size="0.6096" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
 <smd name="EP" x="0" y="0" dx="1" dy="1" layer="1" stop="no" cream="no"/>
-</package>
-<package name="DFN_4_2X2">
-<description>4 Pad DFN package, based on Sensirion SHTC1 design
-&lt;br&gt; &lt;a href = "https://media.digikey.com/pdf/Data%20Sheets/Sensirion%20PDFs/HT_DS_SHTC3_D1.pdf"&gt;Referance Datasheet&lt;/a&gt;</description>
-<smd name="EP" x="0" y="0" dx="0.7" dy="1.6" layer="1" rot="R180" cream="no"/>
-<smd name="4" x="0.95" y="0.5" dx="0.35" dy="0.55" layer="1" rot="R90" cream="no"/>
-<smd name="3" x="0.95" y="-0.5" dx="0.35" dy="0.55" layer="1" rot="R90" cream="no"/>
-<smd name="2" x="-0.95" y="-0.5" dx="0.35" dy="0.55" layer="1" rot="R90" cream="no"/>
-<smd name="1" x="-0.95" y="0.5" dx="0.35" dy="0.55" layer="1" rot="R90" cream="no"/>
-<polygon width="0" layer="31">
-<vertex x="-0.25" y="0.7"/>
-<vertex x="-0.25" y="-0.7"/>
-<vertex x="0.25" y="-0.7"/>
-<vertex x="0.25" y="0.7"/>
-</polygon>
-<polygon width="0" layer="31">
-<vertex x="-0.775" y="-0.325"/>
-<vertex x="-0.775" y="-0.675"/>
-<vertex x="-1.325" y="-0.675"/>
-<vertex x="-1.325" y="-0.325"/>
-</polygon>
-<polygon width="0" layer="31">
-<vertex x="-0.775" y="-0.325"/>
-<vertex x="-0.775" y="-0.675"/>
-<vertex x="-1.325" y="-0.675"/>
-<vertex x="-1.325" y="-0.325"/>
-</polygon>
-<polygon width="0" layer="31">
-<vertex x="-0.775" y="0.675"/>
-<vertex x="-0.775" y="0.325"/>
-<vertex x="-1.325" y="0.325"/>
-<vertex x="-1.325" y="0.675"/>
-</polygon>
-<polygon width="0" layer="31">
-<vertex x="0.775" y="-0.675"/>
-<vertex x="0.775" y="-0.325"/>
-<vertex x="1.325" y="-0.325"/>
-<vertex x="1.325" y="-0.675"/>
-</polygon>
-<polygon width="0" layer="31">
-<vertex x="0.775" y="0.325"/>
-<vertex x="0.775" y="0.675"/>
-<vertex x="1.325" y="0.675"/>
-<vertex x="1.325" y="0.325"/>
-</polygon>
-<wire x1="-1" y1="1" x2="-1" y2="-1" width="0.127" layer="21"/>
-<wire x1="-1" y1="-1" x2="1" y2="-1" width="0.127" layer="21"/>
-<wire x1="1" y1="-1" x2="1" y2="1" width="0.127" layer="21"/>
-<wire x1="1" y1="1" x2="-1" y2="1" width="0.127" layer="21"/>
-<circle x="-1.27" y="1.27" radius="0.127" width="0.127" layer="21"/>
-<text x="0" y="-1.524" size="0.6096" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
 </package>
 <package name="SOT23-5">
 <smd name="5" x="-0.95" y="1.35" dx="0.55" dy="1" layer="1"/>
@@ -602,6 +580,57 @@ Soure: &lt;a href="http://www.ti.com/lit/ds/symlink/ads7042.pdf"&gt; Data sheet 
 <circle x="0" y="0" radius="2.125" width="0.127" layer="21"/>
 <pad name="P$1" x="0" y="0" drill="2.5"/>
 </package>
+<package name="DFN_4_2X2">
+<description>4 Pad DFN package, based on Sensirion SHTC1 design
+&lt;br&gt; &lt;a href = "https://media.digikey.com/pdf/Data%20Sheets/Sensirion%20PDFs/HT_DS_SHTC3_D1.pdf"&gt;Referance Datasheet&lt;/a&gt;</description>
+<smd name="EP" x="0" y="0" dx="0.7" dy="1.6" layer="1" rot="R180" cream="no"/>
+<smd name="4" x="0.95" y="0.5" dx="0.35" dy="0.55" layer="1" rot="R90" cream="no"/>
+<smd name="3" x="0.95" y="-0.5" dx="0.35" dy="0.55" layer="1" rot="R90" cream="no"/>
+<smd name="2" x="-0.95" y="-0.5" dx="0.35" dy="0.55" layer="1" rot="R90" cream="no"/>
+<smd name="1" x="-0.95" y="0.5" dx="0.35" dy="0.55" layer="1" rot="R90" cream="no"/>
+<polygon width="0" layer="31">
+<vertex x="-0.25" y="0.7"/>
+<vertex x="-0.25" y="-0.7"/>
+<vertex x="0.25" y="-0.7"/>
+<vertex x="0.25" y="0.7"/>
+</polygon>
+<polygon width="0" layer="31">
+<vertex x="-0.775" y="-0.325"/>
+<vertex x="-0.775" y="-0.675"/>
+<vertex x="-1.325" y="-0.675"/>
+<vertex x="-1.325" y="-0.325"/>
+</polygon>
+<polygon width="0" layer="31">
+<vertex x="-0.775" y="-0.325"/>
+<vertex x="-0.775" y="-0.675"/>
+<vertex x="-1.325" y="-0.675"/>
+<vertex x="-1.325" y="-0.325"/>
+</polygon>
+<polygon width="0" layer="31">
+<vertex x="-0.775" y="0.675"/>
+<vertex x="-0.775" y="0.325"/>
+<vertex x="-1.325" y="0.325"/>
+<vertex x="-1.325" y="0.675"/>
+</polygon>
+<polygon width="0" layer="31">
+<vertex x="0.775" y="-0.675"/>
+<vertex x="0.775" y="-0.325"/>
+<vertex x="1.325" y="-0.325"/>
+<vertex x="1.325" y="-0.675"/>
+</polygon>
+<polygon width="0" layer="31">
+<vertex x="0.775" y="0.325"/>
+<vertex x="0.775" y="0.675"/>
+<vertex x="1.325" y="0.675"/>
+<vertex x="1.325" y="0.325"/>
+</polygon>
+<wire x1="-1" y1="1" x2="-1" y2="-1" width="0.127" layer="21"/>
+<wire x1="-1" y1="-1" x2="1" y2="-1" width="0.127" layer="21"/>
+<wire x1="1" y1="-1" x2="1" y2="1" width="0.127" layer="21"/>
+<wire x1="1" y1="1" x2="-1" y2="1" width="0.127" layer="21"/>
+<circle x="-1.27" y="1.27" radius="0.127" width="0.127" layer="21"/>
+<text x="0" y="-1.524" size="0.6096" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
+</package>
 </packages>
 <symbols>
 <symbol name="SGP30">
@@ -616,18 +645,6 @@ Soure: &lt;a href="http://www.ti.com/lit/ds/symlink/ads7042.pdf"&gt; Data sheet 
 <wire x1="7.62" y1="7.62" x2="-7.62" y2="7.62" width="0.254" layer="94"/>
 <text x="0" y="9.144" size="1.778" layer="95" ratio="15" align="center">SPG30</text>
 <text x="0" y="-6.604" size="1.778" layer="95" ratio="15" align="center">&gt;NAME</text>
-</symbol>
-<symbol name="SHTC3">
-<pin name="VDD" x="-12.7" y="5.08" length="middle" direction="pwr"/>
-<pin name="VSS" x="-12.7" y="-2.54" length="middle" direction="pwr"/>
-<pin name="SDA" x="12.7" y="-2.54" length="middle" rot="R180"/>
-<pin name="SCL" x="12.7" y="0" length="middle" direction="in" rot="R180"/>
-<wire x1="-7.62" y1="7.62" x2="-7.62" y2="-5.08" width="0.254" layer="94"/>
-<wire x1="-7.62" y1="-5.08" x2="7.62" y2="-5.08" width="0.254" layer="94"/>
-<wire x1="7.62" y1="-5.08" x2="7.62" y2="7.62" width="0.254" layer="94"/>
-<wire x1="7.62" y1="7.62" x2="-7.62" y2="7.62" width="0.254" layer="94"/>
-<text x="0" y="8.636" size="1.27" layer="95" ratio="15" align="center">&gt;DISP</text>
-<text x="0" y="-6.35" size="1.27" layer="95" ratio="15" align="center">&gt;NAME</text>
 </symbol>
 <symbol name="TPS7A05">
 <pin name="VIN" x="-12.7" y="5.08" length="middle" direction="pwr"/>
@@ -759,6 +776,19 @@ Switches electronic signals</description>
 <text x="1.016" y="7.874" size="1.778" layer="94">This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 
 http://creativecommons.org/licenses/by-sa/4.0/</text>
 </symbol>
+<symbol name="SENSOR_I2C">
+<description>&lt;b&gt;Generic Device for I2C Only Sensors&lt;/b&gt;</description>
+<pin name="VCC" x="-12.7" y="5.08" visible="pin" length="middle" direction="pwr"/>
+<pin name="GND" x="-12.7" y="-5.08" visible="pin" length="middle" direction="pwr"/>
+<pin name="SDA" x="12.7" y="-2.54" visible="pin" length="middle" rot="R180"/>
+<pin name="SCL" x="12.7" y="-5.08" visible="pin" length="middle" direction="in" rot="R180"/>
+<wire x1="-7.62" y1="7.62" x2="-7.62" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-7.62" x2="7.62" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-7.62" x2="7.62" y2="7.62" width="0.254" layer="94"/>
+<wire x1="7.62" y1="7.62" x2="-7.62" y2="7.62" width="0.254" layer="94"/>
+<text x="0" y="9.144" size="1.778" layer="95" ratio="15" align="center">&gt;DISP</text>
+<text x="0" y="-9.144" size="1.778" layer="95" ratio="15" align="center">&gt;NAME</text>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="SPG30" prefix="U">
@@ -794,61 +824,6 @@ http://creativecommons.org/licenses/by-sa/4.0/</text>
 <attribute name="DIGIKEY" value="1649-1084-1-ND" constant="no"/>
 <attribute name="MF" value="Sensirion" constant="no"/>
 <attribute name="MPN" value="SGP30-2.5K" constant="no"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="SHTC*" prefix="U">
-<description>&lt;b&gt;SHTCx&lt;/b&gt; - Digital Humidity and Temperature Sensor
- 
-&lt;p&gt;Characteristics (for SHTC3):
-&lt;ul&gt;
-&lt;li&gt;Vcc: 1.62V ~ 3.6V&lt;/li&gt;
-&lt;li&gt;Humidity Resolution: 0.01% RH &lt;/li&gt;
-&lt;li&gt;Humidity Accuracy: &amp;plusmn;2% RH &lt;/li&gt;
-&lt;li&gt;Temperature Resolution: 0.01°C&lt;/li&gt;
-&lt;li&gt;Temperature Accuracy: 0.2°C&lt;/li&gt;
-&lt;li&gt;Operating Temperature: -40°C to 125°C &lt;/li&gt;
-&lt;/ul&gt;
-&lt;/p&gt;
- 
-
-&lt;p&gt;Digikey: &lt;br&gt;
-&lt;ul&gt;
-&lt;a href = "https://www.digikey.com/product-detail/en/sensirion-ag/SHTC3/1649-1100-1-ND/8628149"&gt;1649-1100-1-ND (SHTC3)&lt;/a&gt;&lt;br/&gt;
-
-&lt;a href = "https://www.digikey.com/product-detail/en/sensirion-ag/SHTC1/1649-1015-1-ND/5872297"&gt;1649-1015-1-ND (SHTC1)&lt;/a&gt;&lt;br/&gt;
-&lt;/p&gt;</description>
-<gates>
-<gate name="G$1" symbol="SHTC3" x="0" y="0"/>
-</gates>
-<devices>
-<device name="DFN" package="DFN_4_2X2">
-<connects>
-<connect gate="G$1" pin="SCL" pad="2"/>
-<connect gate="G$1" pin="SDA" pad="3"/>
-<connect gate="G$1" pin="VDD" pad="1"/>
-<connect gate="G$1" pin="VSS" pad="4 EP"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="DIGIKEY" value="" constant="no"/>
-<attribute name="DISP" value="" constant="no"/>
-<attribute name="MF" value="" constant="no"/>
-<attribute name="MPN" value="" constant="no"/>
-</technology>
-<technology name="1">
-<attribute name="DIGIKEY" value="1649-1015-1-ND" constant="no"/>
-<attribute name="DISP" value="SHTC1" constant="no"/>
-<attribute name="MF" value="Sensirion" constant="no"/>
-<attribute name="MPN" value="SHTC1" constant="no"/>
-</technology>
-<technology name="3">
-<attribute name="DIGIKEY" value="1649-1100-1-ND" constant="no"/>
-<attribute name="DISP" value="SHTC3" constant="no"/>
-<attribute name="MF" value="Sensirion" constant="no"/>
-<attribute name="MPN" value="SHTC3" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -1215,6 +1190,61 @@ Digikey: &lt;br&gt;&lt;a href = "https://www.digikey.com/product-detail/en/texas
 <device name="">
 <technologies>
 <technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SHTC*" prefix="U">
+<description>&lt;b&gt;SHTCx&lt;/b&gt; - Digital Humidity and Temperature Sensor
+ 
+&lt;p&gt;Characteristics (for SHTC3):
+&lt;ul&gt;
+&lt;li&gt;Vcc: 1.62V ~ 3.6V&lt;/li&gt;
+&lt;li&gt;Humidity Resolution: 0.01% RH &lt;/li&gt;
+&lt;li&gt;Humidity Accuracy: &amp;plusmn;2% RH &lt;/li&gt;
+&lt;li&gt;Temperature Resolution: 0.01°C&lt;/li&gt;
+&lt;li&gt;Temperature Accuracy: 0.2°C&lt;/li&gt;
+&lt;li&gt;Operating Temperature: -40°C to 125°C &lt;/li&gt;
+&lt;/ul&gt;
+&lt;/p&gt;
+ 
+
+&lt;p&gt;Digikey: &lt;br&gt;
+&lt;ul&gt;
+&lt;a href = "https://www.digikey.com/product-detail/en/sensirion-ag/SHTC3/1649-1100-1-ND/8628149"&gt;1649-1100-1-ND (SHTC3)&lt;/a&gt;&lt;br/&gt;
+
+&lt;a href = "https://www.digikey.com/product-detail/en/sensirion-ag/SHTC1/1649-1015-1-ND/5872297"&gt;1649-1015-1-ND (SHTC1)&lt;/a&gt;&lt;br/&gt;
+&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="SENSOR_I2C" x="0" y="0"/>
+</gates>
+<devices>
+<device name="DFN" package="DFN_4_2X2">
+<connects>
+<connect gate="G$1" pin="GND" pad="4 EP"/>
+<connect gate="G$1" pin="SCL" pad="2"/>
+<connect gate="G$1" pin="SDA" pad="3"/>
+<connect gate="G$1" pin="VCC" pad="1"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DIGIKEY" value="" constant="no"/>
+<attribute name="DISP" value="" constant="no"/>
+<attribute name="MF" value="" constant="no"/>
+<attribute name="MPN" value="" constant="no"/>
+</technology>
+<technology name="1">
+<attribute name="DIGIKEY" value="1649-1015-1-ND" constant="no"/>
+<attribute name="DISP" value="SHTC1" constant="no"/>
+<attribute name="MF" value="Sensirion" constant="no"/>
+<attribute name="MPN" value="SHTC1" constant="no"/>
+</technology>
+<technology name="3">
+<attribute name="DIGIKEY" value="1649-1100-1-ND" constant="no"/>
+<attribute name="DISP" value="SHTC3" constant="no"/>
+<attribute name="MF" value="Sensirion" constant="no"/>
+<attribute name="MPN" value="SHTC3" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -3682,28 +3712,34 @@ Source: AVX .. aphvc.pdf</description>
 <part name="U1" library="bschulz" deviceset="SPG30" device=""/>
 <part name="GND1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="C1" library="bschulz_passives" deviceset="C-EU" device="C0603" technology="0.1UF" value="0.1uF"/>
-<part name="U2" library="bschulz" deviceset="SHTC*" device="DFN" technology="3"/>
 <part name="GND2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="C2" library="bschulz_passives" deviceset="C-EU" device="C0603" technology="0.1UF" value="0.1uF"/>
-<part name="U3" library="bschulz" deviceset="TPS7A05*" device="DBV" technology="18"/>
+<part name="U3" library="bschulz" deviceset="TPS7A05*" device="DBV" technology="18">
+<attribute name="DIGIKEY" value="296-50251-1-ND"/>
+</part>
 <part name="C3" library="bschulz_passives" deviceset="C-EU" device="C0603" technology="1UF" value="1uF"/>
 <part name="C4" library="bschulz_passives" deviceset="C-EU" device="C0603" technology="1UF" value="1uF"/>
 <part name="GND3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="U4" library="bschulz" deviceset="TXS0102" device="DCU"/>
 <part name="GND5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="C5" library="bschulz_passives" deviceset="C-EU" device="C0603" technology="0.1UF"/>
+<part name="C5" library="bschulz_passives" deviceset="C-EU" device="C0603" technology="0.1UF" value="0.1uF"/>
 <part name="GND6" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="C6" library="bschulz_passives" deviceset="C-EU" device="C0603" technology="0.1UF"/>
+<part name="C6" library="bschulz_passives" deviceset="C-EU" device="C0603" technology="0.1UF" value="0.1uF"/>
 <part name="GND7" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="Q1" library="bschulz" deviceset="MOSFET-NCH" device="-DMG3404L" value="DMG3404"/>
 <part name="J1" library="bschulz" deviceset="CONN_4" device="2.54_SCREW"/>
-<part name="H1" library="bschulz" deviceset="MOUNTING_HOLE" device="4_NP"/>
+<part name="H1" library="bschulz" deviceset="MOUNTING_HOLE" device="4_NP">
+<attribute name="DIGIKEY" value="DNP"/>
+<attribute name="MF" value="N/A"/>
+<attribute name="MPN" value="DNP"/>
+</part>
 <part name="FRAME1" library="bschulz" deviceset="FRAME_A_L" device="">
 <attribute name="DESIGNER" value="Bobby Schulz"/>
 <attribute name="PROJECT" value="Hedorah"/>
 <attribute name="REV" value="0.0"/>
 </part>
+<part name="U2" library="bschulz" deviceset="SHTC*" device="DFN" technology="3"/>
 </parts>
 <sheets>
 <sheet>
@@ -3734,16 +3770,12 @@ Mechanical</text>
 <attribute name="NAME" x="59.944" y="147.701" size="1.778" layer="95"/>
 <attribute name="VALUE" x="59.944" y="142.621" size="1.778" layer="96"/>
 </instance>
-<instance part="U2" gate="G$1" x="81.28" y="167.64" smashed="yes">
-<attribute name="DISP" x="81.28" y="176.276" size="1.27" layer="95" ratio="15" align="center"/>
-<attribute name="NAME" x="81.28" y="161.29" size="1.27" layer="95" ratio="15" align="center"/>
-</instance>
 <instance part="GND2" gate="1" x="66.04" y="160.02" smashed="yes">
 <attribute name="VALUE" x="63.5" y="157.48" size="1.778" layer="96"/>
 </instance>
-<instance part="C2" gate="G$1" x="58.42" y="170.18" smashed="yes">
-<attribute name="NAME" x="59.944" y="170.561" size="1.778" layer="95"/>
-<attribute name="VALUE" x="59.944" y="165.481" size="1.778" layer="96"/>
+<instance part="C2" gate="G$1" x="58.42" y="172.72" smashed="yes">
+<attribute name="NAME" x="59.944" y="173.101" size="1.778" layer="95"/>
+<attribute name="VALUE" x="59.944" y="168.021" size="1.778" layer="96"/>
 </instance>
 <instance part="U3" gate="G$1" x="60.96" y="76.2" smashed="yes"/>
 <instance part="C3" gate="G$1" x="38.1" y="78.74" smashed="yes">
@@ -3791,6 +3823,9 @@ Mechanical</text>
 <instance part="H1" gate="G$1" x="198.12" y="167.64" smashed="yes">
 <attribute name="NAME" x="200.152" y="168.2242" size="1.778" layer="95"/>
 <attribute name="VALUE" x="200.152" y="165.1762" size="1.778" layer="96"/>
+<attribute name="DIGIKEY" x="198.12" y="167.64" size="0.8128" layer="96" ratio="15" align="center-left" display="off"/>
+<attribute name="MF" x="198.12" y="167.64" size="0.8128" layer="96" ratio="15" align="center-left" display="off"/>
+<attribute name="MPN" x="198.12" y="167.64" size="0.8128" layer="96" ratio="15" align="center-left" display="off"/>
 </instance>
 <instance part="FRAME1" gate="G$1" x="0" y="0" smashed="yes">
 <attribute name="PROJECT" x="0" y="0" size="1.778" layer="96" display="off"/>
@@ -3805,6 +3840,10 @@ Mechanical</text>
 <attribute name="DESIGNER" x="195.58" y="25.4" size="2.54" layer="94"/>
 <attribute name="REV" x="261.62" y="7.62" size="2.54" layer="94"/>
 </instance>
+<instance part="U2" gate="G$1" x="81.28" y="170.18" smashed="yes">
+<attribute name="DISP" x="81.28" y="179.324" size="1.778" layer="95" ratio="15" align="center"/>
+<attribute name="NAME" x="81.28" y="161.036" size="1.778" layer="95" ratio="15" align="center"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -3816,14 +3855,14 @@ Mechanical</text>
 <label x="96.52" y="144.78" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U2" gate="G$1" pin="SCL"/>
-<wire x1="93.98" y1="167.64" x2="99.06" y2="167.64" width="0.1524" layer="91"/>
-<label x="96.52" y="167.64" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="U4" gate="G$1" pin="A2"/>
 <wire x1="215.9" y1="78.74" x2="210.82" y2="78.74" width="0.1524" layer="91"/>
 <label x="210.82" y="78.74" size="1.778" layer="95"/>
+</segment>
+<segment>
+<wire x1="93.98" y1="165.1" x2="99.06" y2="165.1" width="0.1524" layer="91"/>
+<label x="96.52" y="165.1" size="1.778" layer="95"/>
+<pinref part="U2" gate="G$1" pin="SCL"/>
 </segment>
 </net>
 <net name="SDA" class="0">
@@ -3833,14 +3872,14 @@ Mechanical</text>
 <label x="96.52" y="142.24" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U2" gate="G$1" pin="SDA"/>
-<wire x1="93.98" y1="165.1" x2="99.06" y2="165.1" width="0.1524" layer="91"/>
-<label x="96.52" y="165.1" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="U4" gate="G$1" pin="A1"/>
 <wire x1="215.9" y1="81.28" x2="210.82" y2="81.28" width="0.1524" layer="91"/>
 <label x="210.82" y="81.28" size="1.778" layer="95"/>
+</segment>
+<segment>
+<wire x1="93.98" y1="167.64" x2="99.06" y2="167.64" width="0.1524" layer="91"/>
+<label x="96.52" y="167.64" size="1.778" layer="95"/>
+<pinref part="U2" gate="G$1" pin="SDA"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -3854,12 +3893,13 @@ Mechanical</text>
 <junction x="66.04" y="142.24"/>
 </segment>
 <segment>
-<pinref part="U2" gate="G$1" pin="VSS"/>
 <wire x1="68.58" y1="165.1" x2="66.04" y2="165.1" width="0.1524" layer="91"/>
-<wire x1="66.04" y1="165.1" x2="66.04" y2="162.56" width="0.1524" layer="91"/>
+<wire x1="66.04" y1="165.1" x2="58.42" y2="165.1" width="0.1524" layer="91"/>
 <pinref part="GND2" gate="1" pin="GND"/>
 <pinref part="C2" gate="G$1" pin="2"/>
-<wire x1="66.04" y1="165.1" x2="58.42" y2="165.1" width="0.1524" layer="91"/>
+<wire x1="58.42" y1="165.1" x2="58.42" y2="167.64" width="0.1524" layer="91"/>
+<pinref part="U2" gate="G$1" pin="GND"/>
+<wire x1="66.04" y1="162.56" x2="66.04" y2="165.1" width="0.1524" layer="91"/>
 <junction x="66.04" y="165.1"/>
 </segment>
 <segment>
@@ -3911,12 +3951,12 @@ Mechanical</text>
 <junction x="58.42" y="149.86"/>
 </segment>
 <segment>
-<pinref part="U2" gate="G$1" pin="VDD"/>
-<wire x1="68.58" y1="172.72" x2="58.42" y2="172.72" width="0.1524" layer="91"/>
+<wire x1="68.58" y1="175.26" x2="58.42" y2="175.26" width="0.1524" layer="91"/>
 <pinref part="C2" gate="G$1" pin="1"/>
-<wire x1="58.42" y1="172.72" x2="55.88" y2="172.72" width="0.1524" layer="91"/>
-<junction x="58.42" y="172.72"/>
-<label x="55.88" y="172.72" size="1.778" layer="95" rot="R180" xref="yes"/>
+<wire x1="58.42" y1="175.26" x2="55.88" y2="175.26" width="0.1524" layer="91"/>
+<junction x="58.42" y="175.26"/>
+<label x="55.88" y="175.26" size="1.778" layer="95" rot="R180" xref="yes"/>
+<pinref part="U2" gate="G$1" pin="VCC"/>
 </segment>
 <segment>
 <pinref part="U3" gate="G$1" pin="VOUT"/>

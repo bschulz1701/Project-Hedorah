@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.5.2">
+<eagle version="9.6.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -52,18 +52,19 @@
 <layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
-<layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
 <layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
-<layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
 <layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="52" name="bDocu" color="7" fill="1" visible="no" active="yes"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="53" name="tGND_GNDA" color="7" fill="1" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="7" fill="1" visible="no" active="no"/>
 <layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
 <layer number="57" name="tCAD" color="7" fill="1" visible="no" active="no"/>
+<layer number="58" name="bCAD" color="7" fill="1" visible="no" active="no"/>
 <layer number="59" name="tCarbon" color="7" fill="1" visible="no" active="no"/>
 <layer number="60" name="bCarbon" color="7" fill="1" visible="no" active="no"/>
 <layer number="88" name="SimResults" color="9" fill="1" visible="no" active="no"/>
@@ -95,7 +96,10 @@
 <layer number="114" name="Badge_Outline" color="7" fill="1" visible="no" active="yes"/>
 <layer number="115" name="ReferenceISLANDS" color="7" fill="1" visible="no" active="yes"/>
 <layer number="116" name="Patch_BOT" color="7" fill="1" visible="no" active="yes"/>
+<layer number="117" name="PM_Ref" color="7" fill="1" visible="no" active="no"/>
 <layer number="118" name="Rect_Pads" color="7" fill="1" visible="no" active="yes"/>
+<layer number="119" name="PF_Ref" color="7" fill="1" visible="no" active="no"/>
+<layer number="120" name="WFL_Ref" color="7" fill="1" visible="no" active="no"/>
 <layer number="121" name="_tsilk" color="7" fill="1" visible="no" active="yes"/>
 <layer number="122" name="_bsilk" color="7" fill="1" visible="no" active="yes"/>
 <layer number="123" name="tTestmark" color="7" fill="1" visible="no" active="yes"/>
@@ -105,15 +109,40 @@
 <layer number="127" name="_tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="128" name="_bValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="129" name="Mask" color="7" fill="1" visible="no" active="yes"/>
+<layer number="130" name="SMDSTROOK" color="7" fill="1" visible="no" active="no"/>
 <layer number="131" name="tAdjust" color="7" fill="1" visible="no" active="yes"/>
 <layer number="132" name="bAdjust" color="7" fill="1" visible="no" active="yes"/>
+<layer number="133" name="bottom_silk" color="7" fill="1" visible="no" active="no"/>
+<layer number="134" name="mbFinish" color="7" fill="1" visible="no" active="no"/>
+<layer number="135" name="mtGlue" color="7" fill="1" visible="no" active="no"/>
+<layer number="136" name="mbGlue" color="7" fill="1" visible="no" active="no"/>
+<layer number="137" name="mtTest" color="7" fill="1" visible="no" active="no"/>
+<layer number="138" name="mbTest" color="7" fill="1" visible="no" active="no"/>
+<layer number="139" name="mtKeepout" color="7" fill="1" visible="no" active="no"/>
+<layer number="140" name="mbKeepout" color="7" fill="1" visible="no" active="no"/>
+<layer number="141" name="mtRestrict" color="7" fill="1" visible="no" active="no"/>
+<layer number="142" name="mbRestrict" color="7" fill="1" visible="no" active="no"/>
+<layer number="143" name="mvRestrict" color="7" fill="1" visible="no" active="no"/>
 <layer number="144" name="Drill_legend" color="7" fill="1" visible="no" active="yes"/>
+<layer number="145" name="mHoles" color="7" fill="1" visible="no" active="no"/>
+<layer number="146" name="mMilling" color="7" fill="1" visible="no" active="no"/>
+<layer number="147" name="mMeasures" color="7" fill="1" visible="no" active="no"/>
+<layer number="148" name="mDocument" color="7" fill="1" visible="no" active="no"/>
+<layer number="149" name="mReference" color="7" fill="1" visible="no" active="no"/>
 <layer number="150" name="Notes" color="7" fill="1" visible="no" active="yes"/>
 <layer number="151" name="HeatSink" color="7" fill="1" visible="no" active="yes"/>
 <layer number="152" name="_bDocu" color="7" fill="1" visible="no" active="yes"/>
 <layer number="153" name="FabDoc1" color="7" fill="1" visible="no" active="yes"/>
 <layer number="154" name="FabDoc2" color="7" fill="1" visible="no" active="yes"/>
 <layer number="155" name="FabDoc3" color="7" fill="1" visible="no" active="yes"/>
+<layer number="166" name="AntennaArea" color="7" fill="1" visible="no" active="no"/>
+<layer number="168" name="4mmHeightArea" color="7" fill="1" visible="no" active="no"/>
+<layer number="191" name="mNets" color="7" fill="1" visible="no" active="no"/>
+<layer number="192" name="mBusses" color="7" fill="1" visible="no" active="no"/>
+<layer number="193" name="mPins" color="7" fill="1" visible="no" active="no"/>
+<layer number="194" name="mSymbols" color="7" fill="1" visible="no" active="no"/>
+<layer number="195" name="mNames" color="7" fill="1" visible="no" active="no"/>
+<layer number="196" name="mValues" color="7" fill="1" visible="no" active="no"/>
 <layer number="199" name="Contour" color="7" fill="1" visible="no" active="yes"/>
 <layer number="200" name="200bmp" color="7" fill="1" visible="no" active="yes"/>
 <layer number="201" name="201bmp" color="7" fill="1" visible="no" active="yes"/>
@@ -286,57 +315,6 @@ Bobby Schulz</text>
 <text x="0" y="-1.778" size="0.6096" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
 <smd name="EP" x="0" y="0" dx="1" dy="1" layer="1" stop="no" cream="no"/>
 </package>
-<package name="DFN_4_2X2">
-<description>4 Pad DFN package, based on Sensirion SHTC1 design
-&lt;br&gt; &lt;a href = "https://media.digikey.com/pdf/Data%20Sheets/Sensirion%20PDFs/HT_DS_SHTC3_D1.pdf"&gt;Referance Datasheet&lt;/a&gt;</description>
-<smd name="EP" x="0" y="0" dx="0.7" dy="1.6" layer="1" rot="R180" cream="no"/>
-<smd name="4" x="0.95" y="0.5" dx="0.35" dy="0.55" layer="1" rot="R90" cream="no"/>
-<smd name="3" x="0.95" y="-0.5" dx="0.35" dy="0.55" layer="1" rot="R90" cream="no"/>
-<smd name="2" x="-0.95" y="-0.5" dx="0.35" dy="0.55" layer="1" rot="R90" cream="no"/>
-<smd name="1" x="-0.95" y="0.5" dx="0.35" dy="0.55" layer="1" rot="R90" cream="no"/>
-<polygon width="0" layer="31">
-<vertex x="-0.25" y="0.7"/>
-<vertex x="-0.25" y="-0.7"/>
-<vertex x="0.25" y="-0.7"/>
-<vertex x="0.25" y="0.7"/>
-</polygon>
-<polygon width="0" layer="31">
-<vertex x="-0.775" y="-0.325"/>
-<vertex x="-0.775" y="-0.675"/>
-<vertex x="-1.325" y="-0.675"/>
-<vertex x="-1.325" y="-0.325"/>
-</polygon>
-<polygon width="0" layer="31">
-<vertex x="-0.775" y="-0.325"/>
-<vertex x="-0.775" y="-0.675"/>
-<vertex x="-1.325" y="-0.675"/>
-<vertex x="-1.325" y="-0.325"/>
-</polygon>
-<polygon width="0" layer="31">
-<vertex x="-0.775" y="0.675"/>
-<vertex x="-0.775" y="0.325"/>
-<vertex x="-1.325" y="0.325"/>
-<vertex x="-1.325" y="0.675"/>
-</polygon>
-<polygon width="0" layer="31">
-<vertex x="0.775" y="-0.675"/>
-<vertex x="0.775" y="-0.325"/>
-<vertex x="1.325" y="-0.325"/>
-<vertex x="1.325" y="-0.675"/>
-</polygon>
-<polygon width="0" layer="31">
-<vertex x="0.775" y="0.325"/>
-<vertex x="0.775" y="0.675"/>
-<vertex x="1.325" y="0.675"/>
-<vertex x="1.325" y="0.325"/>
-</polygon>
-<wire x1="-1" y1="1" x2="-1" y2="-1" width="0.127" layer="21"/>
-<wire x1="-1" y1="-1" x2="1" y2="-1" width="0.127" layer="21"/>
-<wire x1="1" y1="-1" x2="1" y2="1" width="0.127" layer="21"/>
-<wire x1="1" y1="1" x2="-1" y2="1" width="0.127" layer="21"/>
-<circle x="-1.27" y="1.27" radius="0.127" width="0.127" layer="21"/>
-<text x="0" y="-1.524" size="0.6096" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
-</package>
 <package name="SOT23-5">
 <smd name="5" x="-0.95" y="1.35" dx="0.55" dy="1" layer="1"/>
 <smd name="4" x="0.95" y="1.35" dx="0.55" dy="1" layer="1"/>
@@ -397,6 +375,57 @@ Soure: &lt;a href="http://www.ti.com/lit/ds/symlink/ads7042.pdf"&gt; Data sheet 
 <hole x="0" y="0" drill="3.175"/>
 <circle x="0" y="0" radius="2.33" width="0.127" layer="39"/>
 <circle x="0" y="0" radius="2.65" width="0.127" layer="21"/>
+</package>
+<package name="DFN_4_2X2">
+<description>4 Pad DFN package, based on Sensirion SHTC1 design
+&lt;br&gt; &lt;a href = "https://media.digikey.com/pdf/Data%20Sheets/Sensirion%20PDFs/HT_DS_SHTC3_D1.pdf"&gt;Referance Datasheet&lt;/a&gt;</description>
+<smd name="EP" x="0" y="0" dx="0.7" dy="1.6" layer="1" rot="R180" cream="no"/>
+<smd name="4" x="0.95" y="0.5" dx="0.35" dy="0.55" layer="1" rot="R90" cream="no"/>
+<smd name="3" x="0.95" y="-0.5" dx="0.35" dy="0.55" layer="1" rot="R90" cream="no"/>
+<smd name="2" x="-0.95" y="-0.5" dx="0.35" dy="0.55" layer="1" rot="R90" cream="no"/>
+<smd name="1" x="-0.95" y="0.5" dx="0.35" dy="0.55" layer="1" rot="R90" cream="no"/>
+<polygon width="0" layer="31">
+<vertex x="-0.25" y="0.7"/>
+<vertex x="-0.25" y="-0.7"/>
+<vertex x="0.25" y="-0.7"/>
+<vertex x="0.25" y="0.7"/>
+</polygon>
+<polygon width="0" layer="31">
+<vertex x="-0.775" y="-0.325"/>
+<vertex x="-0.775" y="-0.675"/>
+<vertex x="-1.325" y="-0.675"/>
+<vertex x="-1.325" y="-0.325"/>
+</polygon>
+<polygon width="0" layer="31">
+<vertex x="-0.775" y="-0.325"/>
+<vertex x="-0.775" y="-0.675"/>
+<vertex x="-1.325" y="-0.675"/>
+<vertex x="-1.325" y="-0.325"/>
+</polygon>
+<polygon width="0" layer="31">
+<vertex x="-0.775" y="0.675"/>
+<vertex x="-0.775" y="0.325"/>
+<vertex x="-1.325" y="0.325"/>
+<vertex x="-1.325" y="0.675"/>
+</polygon>
+<polygon width="0" layer="31">
+<vertex x="0.775" y="-0.675"/>
+<vertex x="0.775" y="-0.325"/>
+<vertex x="1.325" y="-0.325"/>
+<vertex x="1.325" y="-0.675"/>
+</polygon>
+<polygon width="0" layer="31">
+<vertex x="0.775" y="0.325"/>
+<vertex x="0.775" y="0.675"/>
+<vertex x="1.325" y="0.675"/>
+<vertex x="1.325" y="0.325"/>
+</polygon>
+<wire x1="-1" y1="1" x2="-1" y2="-1" width="0.127" layer="21"/>
+<wire x1="-1" y1="-1" x2="1" y2="-1" width="0.127" layer="21"/>
+<wire x1="1" y1="-1" x2="1" y2="1" width="0.127" layer="21"/>
+<wire x1="1" y1="1" x2="-1" y2="1" width="0.127" layer="21"/>
+<circle x="-1.27" y="1.27" radius="0.127" width="0.127" layer="21"/>
+<text x="0" y="-1.524" size="0.6096" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
 </package>
 </packages>
 </library>
@@ -615,14 +644,14 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="NAME" x="10.795" y="11.557" size="0.6096" layer="25" font="vector" ratio="15" rot="R180" align="center"/>
 <attribute name="VALUE" x="12.192" y="13.462" size="0.6096" layer="27" font="vector" ratio="15" rot="R90" align="center"/>
 </element>
-<element name="C5" library="bschulz_passives" package="C0603" value="" x="8.382" y="1.143" smashed="yes" rot="R180">
+<element name="C5" library="bschulz_passives" package="C0603" value="0.1uF" x="8.382" y="1.143" smashed="yes" rot="R180">
 <attribute name="DIGIKEY" value="490-6051-1-ND" x="-6.858" y="29.083" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MF" value="Murata" x="-6.858" y="29.083" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MPN" value="GCM188R71E104KA57D" x="-6.858" y="29.083" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="NAME" x="10.287" y="1.143" size="0.6096" layer="25" font="vector" ratio="15" rot="R270" align="center"/>
 <attribute name="VALUE" x="8.382" y="2.54" size="0.6096" layer="27" font="vector" ratio="15" rot="R180" align="center"/>
 </element>
-<element name="C6" library="bschulz_passives" package="C0603" value="" x="8.636" y="7.239" smashed="yes">
+<element name="C6" library="bschulz_passives" package="C0603" value="0.1uF" x="8.636" y="7.239" smashed="yes">
 <attribute name="DIGIKEY" value="490-6051-1-ND" x="27.686" y="-20.701" size="1.778" layer="27" display="off"/>
 <attribute name="MF" value="Murata" x="27.686" y="-20.701" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="GCM188R71E104KA57D" x="27.686" y="-20.701" size="1.778" layer="27" display="off"/>
@@ -649,15 +678,8 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="MPN" value="SGP30-2.5K" x="-9.525" y="31.242" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="NAME" x="15.875" y="11.557" size="0.6096" layer="25" font="vector" ratio="15" rot="R180" align="center"/>
 </element>
-<element name="U2" library="bschulz" package="DFN_4_2X2" value="SHTC3DFN" x="15.748" y="2.032" smashed="yes" rot="R90">
-<attribute name="DIGIKEY" value="1649-1100-1-ND" x="39.878" y="28.702" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="DISP" value="SHTC3" x="39.878" y="28.702" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MF" value="Sensirion" x="39.878" y="28.702" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MPN" value="SHTC3" x="39.878" y="28.702" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="15.748" y="3.937" size="0.6096" layer="25" font="vector" ratio="15" rot="R180" align="center"/>
-</element>
 <element name="U3" library="bschulz" package="SOT23-5" value="TPS7A0518DBV" x="7.62" y="12.827" smashed="yes" rot="R180">
-<attribute name="DIGIKEY" value="" x="-8.89" y="16.637" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="DIGIKEY" value="296-50251-1-ND" x="-8.89" y="16.637" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MF" value="TI" x="-8.89" y="16.637" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MOUSER" value="595-TPS7A0518PDBVR" x="-8.89" y="16.637" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MPN" value="TPS7A0518PDBVR" x="-8.89" y="16.637" size="1.778" layer="27" rot="R180" display="off"/>
@@ -671,12 +693,22 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="NAME" x="9.926" y="4.223" size="0.6096" layer="25" font="vector" ratio="15" rot="R90"/>
 <attribute name="VALUE" x="9.993" y="2.191" size="0.6096" layer="27" font="vector" ratio="15" rot="R90"/>
 </element>
-<element name="H1" library="bschulz" package="4_40" value="" x="14.478" y="7.836" smashed="yes"/>
+<element name="H1" library="bschulz" package="4_40" value="" x="14.478" y="7.836" smashed="yes">
+<attribute name="DIGIKEY" value="DNP" x="14.478" y="7.836" size="1.778" layer="27" display="off"/>
+<attribute name="MF" value="N/A" x="14.478" y="7.836" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="DNP" x="14.478" y="7.836" size="1.778" layer="27" display="off"/>
+</element>
+<element name="U2" library="bschulz" package="DFN_4_2X2" value="SHTC3DFN" x="15.748" y="2.032" smashed="yes" rot="R90">
+<attribute name="DIGIKEY" value="1649-1100-1-ND" x="15.748" y="2.032" size="1.27" layer="27" font="vector" ratio="15" rot="R90" display="off"/>
+<attribute name="DISP" value="SHTC3" x="15.748" y="2.032" size="1.27" layer="27" font="vector" ratio="15" rot="R90" display="off"/>
+<attribute name="MF" value="Sensirion" x="15.748" y="2.032" size="1.27" layer="27" font="vector" ratio="15" rot="R90" display="off"/>
+<attribute name="MPN" value="SHTC3" x="15.748" y="2.032" size="1.27" layer="27" font="vector" ratio="15" rot="R90" display="off"/>
+<attribute name="NAME" x="17.272" y="2.032" size="0.6096" layer="25" font="vector" ratio="15" rot="R90" align="center"/>
+</element>
 </elements>
 <signals>
 <signal name="SCL">
 <contactref element="U1" pad="6"/>
-<contactref element="U2" pad="2"/>
 <contactref element="U4" pad="4"/>
 <wire x1="14.725" y1="12.662" x2="14.725" y2="12.185" width="0.2" layer="1"/>
 <wire x1="14.725" y1="12.185" x2="14.478" y2="11.938" width="0.2" layer="1"/>
@@ -685,8 +717,6 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <wire x1="8.878" y1="2.641" x2="9.386" y2="2.641" width="0.2" layer="1"/>
 <wire x1="9.525" y1="2.78" x2="9.525" y2="3.5544" width="0.2" layer="1"/>
 <via x="9.525" y="3.5544" extent="1-16" drill="0.254"/>
-<wire x1="16.248" y1="1.082" x2="17.059" y2="1.082" width="0.2" layer="1"/>
-<wire x1="17.059" y1="1.082" x2="17.125" y2="1.016" width="0.2" layer="1"/>
 <via x="17.125" y="1.016" extent="1-16" drill="0.254"/>
 <wire x1="17.125" y1="1.016" x2="14.5866" y2="3.5544" width="0.2" layer="16"/>
 <wire x1="14.5866" y1="3.5544" x2="9.525" y2="3.5544" width="0.2" layer="16"/>
@@ -695,10 +725,12 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <wire x1="9.0186" y1="10.2886" x2="9.0186" y2="3.7272375" width="0.2" layer="16"/>
 <wire x1="14.478" y1="11.938" x2="10.668" y2="11.938" width="0.2" layer="16"/>
 <wire x1="10.668" y1="11.938" x2="9.0186" y2="10.2886" width="0.2" layer="16"/>
+<contactref element="U2" pad="2"/>
+<wire x1="17.125" y1="1.016" x2="17.059" y2="1.082" width="0.2" layer="1"/>
+<wire x1="17.059" y1="1.082" x2="16.248" y2="1.082" width="0.2" layer="1"/>
 </signal>
 <signal name="SDA">
 <contactref element="U1" pad="3"/>
-<contactref element="U2" pad="3"/>
 <contactref element="U4" pad="5"/>
 <wire x1="17.025" y1="14.262" x2="17.025" y2="14.725" width="0.2" layer="1"/>
 <wire x1="17.025" y1="14.725" x2="16.764" y2="14.986" width="0.2" layer="1"/>
@@ -706,7 +738,6 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <wire x1="8.878" y1="5.741" x2="9.372" y2="5.741" width="0.2" layer="1"/>
 <wire x1="9.372" y1="5.741" x2="9.525" y2="5.588" width="0.2" layer="1"/>
 <via x="9.525" y="5.588" extent="1-16" drill="0.254"/>
-<wire x1="16.248" y1="2.982" x2="17.059" y2="2.982" width="0.2" layer="1"/>
 <wire x1="17.059" y1="2.982" x2="17.125" y2="3.048" width="0.2" layer="1"/>
 <via x="17.125" y="3.048" extent="1-16" drill="0.254"/>
 <wire x1="17.125" y1="3.048" x2="16.236" y2="3.937" width="0.2" layer="16"/>
@@ -718,14 +749,14 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <wire x1="10.668" y1="11.43" x2="9.525" y2="10.287" width="0.2" layer="16"/>
 <wire x1="9.525" y1="10.287" x2="9.525" y2="5.588" width="0.2" layer="16"/>
 <wire x1="14.732" y1="11.43" x2="10.668" y2="11.43" width="0.2" layer="16"/>
+<contactref element="U2" pad="3"/>
+<wire x1="16.248" y1="2.982" x2="17.059" y2="2.982" width="0.2" layer="1"/>
 </signal>
 <signal name="GND">
 <contactref element="U1" pad="2"/>
 <contactref element="U1" pad="4"/>
 <contactref element="U1" pad="EP"/>
 <contactref element="C1" pad="2"/>
-<contactref element="U2" pad="4"/>
-<contactref element="U2" pad="EP"/>
 <contactref element="C2" pad="2"/>
 <contactref element="U3" pad="2"/>
 <contactref element="C3" pad="2"/>
@@ -766,10 +797,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <wire x1="13.462" y1="2.882" x2="12.358" y2="2.882" width="0.2" layer="1"/>
 <wire x1="12.358" y1="2.882" x2="12.192" y2="3.048" width="0.2" layer="1"/>
 <via x="12.192" y="3.048" extent="1-16" drill="0.254"/>
-<wire x1="15.248" y1="2.982" x2="13.562" y2="2.982" width="0.2" layer="1"/>
 <wire x1="13.562" y1="2.982" x2="13.462" y2="2.882" width="0.2" layer="1"/>
-<wire x1="15.248" y1="2.982" x2="15.248" y2="2.032" width="0.2" layer="1"/>
-<wire x1="15.248" y1="2.032" x2="15.748" y2="2.032" width="0.2" layer="1"/>
 <wire x1="7.874" y1="3.048" x2="7.62" y2="3.302" width="0.2" layer="16"/>
 <wire x1="7.62" y1="3.302" x2="7.62" y2="3.81" width="0.2" layer="16"/>
 <wire x1="12.192" y1="3.048" x2="7.874" y2="3.048" width="0.2" layer="16"/>
@@ -779,12 +807,19 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <wire x1="7.62" y1="15.0326" x2="9.0974" y2="15.0326" width="0.4064" layer="1"/>
 <wire x1="9.271" y1="14.859" x2="9.271" y2="14.351" width="0.4064" layer="1"/>
 <wire x1="9.0974" y1="15.0326" x2="9.271" y2="14.859" width="0.4064" layer="1"/>
+<contactref element="U2" pad="4"/>
+<contactref element="U2" pad="EP"/>
+<wire x1="13.462" y1="2.882" x2="15.148" y2="2.882" width="0.2" layer="1"/>
+<wire x1="15.148" y1="2.882" x2="15.248" y2="2.982" width="0.2" layer="1"/>
+<wire x1="15.248" y1="2.982" x2="15.248" y2="2.04" width="0.2" layer="1"/>
+<wire x1="15.248" y1="2.04" x2="15.113" y2="1.905" width="0.2" layer="1"/>
+<wire x1="15.113" y1="1.905" x2="15.621" y2="1.905" width="0.2" layer="1"/>
+<wire x1="15.621" y1="1.905" x2="15.748" y2="2.032" width="0.2" layer="1"/>
 </signal>
 <signal name="1V8">
 <contactref element="U1" pad="5"/>
 <contactref element="U1" pad="1"/>
 <contactref element="C1" pad="1"/>
-<contactref element="U2" pad="1"/>
 <contactref element="C2" pad="1"/>
 <contactref element="U3" pad="5"/>
 <contactref element="C4" pad="1"/>
@@ -819,12 +854,13 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <wire x1="12.661" y1="1.182" x2="12.319" y2="1.524" width="0.2" layer="1"/>
 <wire x1="12.319" y1="1.524" x2="12.319" y2="2.032" width="0.2" layer="1"/>
 <wire x1="12.319" y1="2.032" x2="9.652" y2="4.699" width="0.2" layer="1"/>
-<wire x1="15.248" y1="1.082" x2="15.148" y2="1.182" width="0.2" layer="1"/>
-<wire x1="15.148" y1="1.182" x2="13.462" y2="1.182" width="0.2" layer="1"/>
 <wire x1="10.795" y1="12.612" x2="10.756" y2="12.573" width="0.4064" layer="1"/>
 <wire x1="10.756" y1="12.573" x2="9.178375" y2="12.573" width="0.4064" layer="1"/>
 <wire x1="8.57" y1="11.964625" x2="8.57" y2="11.477" width="0.4064" layer="1"/>
 <wire x1="9.178375" y1="12.573" x2="8.57" y2="11.964625" width="0.4064" layer="1"/>
+<contactref element="U2" pad="1"/>
+<wire x1="13.462" y1="1.182" x2="15.148" y2="1.182" width="0.2" layer="1"/>
+<wire x1="15.148" y1="1.182" x2="15.248" y2="1.082" width="0.2" layer="1"/>
 </signal>
 <signal name="VIN+">
 <contactref element="U3" pad="1"/>

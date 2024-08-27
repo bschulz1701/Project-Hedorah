@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.5.2">
+<eagle version="9.6.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -168,10 +168,6 @@
 <text x="4.318" y="8.128" size="0.8128" layer="52" font="vector" ratio="15" rot="MR180" align="center-left">Project Hedorah v0.0
 Hard Mount
 Bobby Schulz</text>
-<text x="-4.953" y="34.671" size="0.6096" layer="51" font="vector" ratio="15" align="center">Vin-</text>
-<text x="-4.953" y="32.131" size="0.6096" layer="51" font="vector" ratio="15" align="center">Vin+</text>
-<text x="-4.953" y="29.591" size="0.6096" layer="51" font="vector" ratio="15" align="center">SDA</text>
-<text x="-4.953" y="27.051" size="0.6096" layer="51" font="vector" ratio="15" align="center">SCL</text>
 <wire x1="20.205" y1="3.81" x2="18.025" y2="3.81" width="0" layer="20"/>
 <wire x1="18.025" y1="3.81" x2="17.525" y2="3.31" width="0" layer="20" curve="90"/>
 <wire x1="17.525" y1="3.31" x2="17.525" y2="1.20710625" width="0" layer="20"/>
@@ -612,14 +608,14 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="NAME" x="9.906" y="5.969" size="0.6096" layer="25" font="vector" ratio="15" rot="R180" align="center"/>
 <attribute name="VALUE" x="11.303" y="7.874" size="0.6096" layer="27" font="vector" ratio="15" rot="R90" align="center"/>
 </element>
-<element name="C5" library="bschulz_passives" package="C0603" value="" x="13.716" y="1.778" smashed="yes" rot="R270">
+<element name="C5" library="bschulz_passives" package="C0603" value="0.1uF" x="13.716" y="1.778" smashed="yes" rot="R270">
 <attribute name="DIGIKEY" value="490-6051-1-ND" x="-14.224" y="-13.462" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MF" value="Murata" x="-14.224" y="-13.462" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MPN" value="GCM188R71E104KA57D" x="-14.224" y="-13.462" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="NAME" x="15.113" y="1.778" size="0.6096" layer="25" font="vector" ratio="15" rot="R90" align="center"/>
 <attribute name="VALUE" x="12.319" y="1.778" size="0.6096" layer="27" font="vector" ratio="15" rot="R270" align="center"/>
 </element>
-<element name="C6" library="bschulz_passives" package="C0603" value="" x="7.62" y="1.778" smashed="yes" rot="R90">
+<element name="C6" library="bschulz_passives" package="C0603" value="0.1uF" x="7.62" y="1.778" smashed="yes" rot="R90">
 <attribute name="DIGIKEY" value="490-6051-1-ND" x="35.56" y="20.828" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MF" value="Murata" x="35.56" y="20.828" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MPN" value="GCM188R71E104KA57D" x="35.56" y="20.828" size="1.778" layer="27" rot="R90" display="off"/>
@@ -647,7 +643,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="NAME" x="17.566" y="5.04" size="0.6096" layer="25" font="vector" ratio="15" rot="R270" align="center"/>
 </element>
 <element name="U3" library="bschulz" package="SOT23-5" value="TPS7A0518DBV" x="7.112" y="7.366" smashed="yes" rot="R180">
-<attribute name="DIGIKEY" value="" x="-9.398" y="11.176" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="DIGIKEY" value="1649-1015-1-ND" x="-9.398" y="11.176" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MF" value="TI" x="-9.398" y="11.176" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MOUSER" value="595-TPS7A0518PDBVR" x="-9.398" y="11.176" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MPN" value="TPS7A0518PDBVR" x="-9.398" y="11.176" size="1.778" layer="27" rot="R180" display="off"/>
