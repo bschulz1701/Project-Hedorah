@@ -1,3 +1,5 @@
+[![DOI](https://zenodo.org/badge/186474699.svg)](https://zenodo.org/doi/10.5281/zenodo.13381320)
+
 # Project-Hedorah
 A hardened CO2 sensing system designed for use in unusual environments 
 
