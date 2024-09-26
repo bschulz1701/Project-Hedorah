@@ -36,6 +36,10 @@ Scripts and results from the testing process and development process. Contains m
 * **Interfaces:** I<sup>2</sup>C
 <!-- * **Release Version:** v1.0 - 2021/04/14  -->
 
+![Hedroah Mrk 2 Enclosure Render, Isometric](Documents/Images/HEDORAH_Beta_IsoFront_v001_CROPPED.jpg)
+
+![Hedroah Mrk 2 Enclosure Render, Cross Section](Documents/Images/Render_Cross.png)
+
 ![Hedroah NDIR v1.0 - Top](Documents/Images/HedorahNDIR_TOP_CROPPED.jpg)
 
 ![Hedroah NDIR v1.0 - Bottom](Documents/Images/HedorahNDIR_BOTTOM_CROPPED.jpg)
@@ -92,6 +96,8 @@ Scripts and results from the testing process and development process. Contains m
   * `v0.0` - Initial NDIR version, breakout only
 
   * `v1.0` - Added reverse polarity protection and I2C pullups
+
+**Mrk 3 - Dual (BETA):** Dual sensor version with low and high range sensor
 
 ## Jumper Settings 
 
